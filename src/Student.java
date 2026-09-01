@@ -1,12 +1,11 @@
-public class Student {
-    String name;
+public class Student extends Person {
     String deegreCourse;
     int age;
     double gpa;
     String dream;
 
-    Student(String name, String deegreCourse, int age, double gpa, String dream){
-        this.name = name;
+    Student(String first, String last, String deegreCourse, int age, double gpa, String dream){
+        super(first, last);
         this.deegreCourse = deegreCourse;
         this.age = age;
         this.dream = dream;
@@ -14,7 +13,10 @@ public class Student {
     }
 
     void study(){
-        System.out.println(this.name + " is studying");
+        super.showName();
+        System.out.println("is studying");
     }
+
+
 
 }
