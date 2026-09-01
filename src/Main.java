@@ -11,9 +11,9 @@ void main() {
     User user2 = new User("Patrick", "pStar@outlook.com");
     User user3 = new User("Patrick", "pStar@outlook.com", 99);
 
-    Car car1 = new Car("Mustang", "black", 2016);
-    Car car2 = new Car("Porsche", "white", 2022);
-    Car car3 = new Car("BYD king", "grey", 2025);
+    Car car1 = new Car("Ford", "Mustang", "black", 2016);
+    Car car2 = new Car("Porsche", "911", "white", 2022);
+    Car car3 = new Car("BYD", "king", "grey", 2025);
 
     Car[] cars = {car1, car2, car3};
     //you can pass in anonymous objects too.
@@ -56,5 +56,16 @@ void main() {
     Cats cats = new Cats("Garfield");
 
     cats.fazerSom();
+
+    // toString() = Method inherited from the object class.
+    // Used to return a string representation of an object.
+    // By default, it returns a hash code as a unique identifier.
+    // It can be overridden to provide meaningful details.
+
+
+    System.out.println(car1);
+
+
+
 
 }
