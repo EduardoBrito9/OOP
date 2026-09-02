@@ -62,8 +62,34 @@ void main() {
     // By default, it returns a hash code as a unique identifier.
     // It can be overridden to provide meaningful details.
 
+    // abstract = Used to define abstract classes and methods.
+    //            Abstraction is the process of hiding implementation details
+    //            and showing only the essential features;
+    //            Abstract classes CAN´T be instantiated directly
+    //            Can contain 'abstract' method (which must be implemented)
+    //            Can contain 'concrete' methods (which are inherited)
+    //            ex: every animal has a sound, but hasn't a generic sound from a generic animal, so class Animal - fazerSom() is abstract, and Dog extends Animal fazerSom() is concrete.
+
+
+    Triangle triangle = new Triangle(2, 3);
+
+    System.out.println(triangle.area());
 
     System.out.println(car1);
+
+    // Interface = A blueprint for a class that specifies a set of abstract methods
+    // that implementing classes must define.
+    // Supports multiple inheritance-like behavior.
+
+
+    Rabbit rabbit = new Rabbit();
+    rabbit.flee();
+
+    Hawk hawk = new Hawk();
+    hawk.hunt();
+
+
+
 
 
 
